@@ -16,6 +16,7 @@ class User extends Base
             ->withStatus(200);
 
     }
+
     public function cadastro($request, $response)
     {
          $dadosTemplate = [
@@ -25,7 +26,6 @@ class User extends Base
             ->render($response, $this->setView('cadastro'), $dadosTemplate)
             ->withHeader('Content-Type', 'text/html')
             ->withStatus(200);
-
 
     }
 }
