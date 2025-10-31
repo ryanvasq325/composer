@@ -1,0 +1,40 @@
+{% extends "main.html" %}
+
+{% block main %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+
+                <div class="card-header">
+                    <a href="/usuario/cadastro" class="btn btn-success">Cadastrar</a>
+                </div>
+
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                            <th>Codígo</th>
+                            <th>Nome</th>
+                            <th>Sobrenome</th>
+                            <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Lebron</td>
+                                <td>James</td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
