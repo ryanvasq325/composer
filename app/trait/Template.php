@@ -6,12 +6,12 @@ use Slim\Views\Twig;
 
 trait Template
 {
-
     public function getTwig()
     {
         try {
             $twig = Twig::create(DIR_VIEW);
-            $twig->getEnvironment()->addGlobal('EMPRESA', 'Nexify');
+            #Adicionamos uma varaivel de template Global acessivel de qualquer template
+            $twig->getEnvironment()->addGlobal('EMPRESA', 'Gambiarra&CIA');
             return $twig;
         } catch (\Exception $e) {
             throw new \Exception("Restrição: " . $e->getMessage());
